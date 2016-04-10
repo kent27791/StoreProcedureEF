@@ -58,6 +58,11 @@
     <Compile Include="Common\SqlRequest.cs" />
     <Compile Include="Configurations\Config.cs" />
     <Compile Include="Extensions\SqlHelper.cs" />
+    <Compile Include="Migrations\201604101144020_Initial.cs" />
+    <Compile Include="Migrations\201604101144020_Initial.Designer.cs">
+      <DependentUpon>201604101144020_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class.cs" />
     <Compile Include="Models\DemoStoreProcedureContext.cs" />
     <Compile Include="Models\Mapping\ClassMap.cs" />
@@ -71,6 +76,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604101144020_Initial.resx">
+      <DependentUpon>201604101144020_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
